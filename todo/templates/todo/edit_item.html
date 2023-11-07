@@ -8,17 +8,17 @@
 </head>
 <body>
     <h1>
-        Add to-do item !
+        Edit to-do item !
     </h1>
     <br>
     <br>
-    <form method="POST" action="{% url 'add' %}">
+    <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <div>
             <p>
                 <button type="submit">
-                    Add item !
+                    Update item !
                 </button>
             </p>
         </div>
